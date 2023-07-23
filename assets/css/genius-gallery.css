@@ -1,0 +1,136 @@
+img {max-width:100%;}
+.alignleft {float:left; margin-right: 15px;}
+.alignright {float:right; margin-left: 15px;}
+.aligncenter {float:none; margin: 0 auto;}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.projects_area {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 40px 0;
+}
+.projects {
+    text-align: center;
+}
+
+
+/*     Starting of mixit up jqery      */
+single_project
+.project_filter ul.project_menu{
+    text-align: center;
+}
+
+.project_filter ul.project_menu li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #616161;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+.project_filter ul.project_menu li:hover {
+    color: #fa6c65;
+}
+.project_list {
+    /*margin-left: -10px;*/
+}
+.project_list .single_project{
+    /*float: left;*/
+    /*width: 227px;*/
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.single_project img{
+    width: 100%;
+}
+.project_list .col-md-4{
+    width: 32%;
+}
+
+.mix{
+    padding: 0;
+}
+.project_detail {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.single_project{
+
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -ms-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.single_project:hover .project_detail {
+    visibility: visible;
+    opacity: 1;
+}
+.project_detail a {
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    background: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 13px;
+    position: absolute;
+    z-index: 999;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -ms-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+    top:45%;
+    left:45%;
+}
+.project_detail a:hover {
+    border: 1px solid #06357A;
+    background: #06357A;
+}
+.project_overlay {
+    background-color: #333;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+    .project_detail a {
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        background: none;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 13px;
+        position: absolute;
+        z-index: 999;
+        top:25%;
+    	left:25%;
+    }
+    .project_detail a .fa{
+        height:30px;
+        width:30px;
+    }
+}
